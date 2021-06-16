@@ -10,9 +10,19 @@ public class TwilioConfiguration {
 
     private String accountSid;
     private String authToken;
+    private String serviceId;
     private String trialNumber;
+    
 
-    public TwilioConfiguration() {
+    public String getTrialNumber() {
+		return trialNumber;
+	}
+
+	public void setTrialNumber(String trialNumber) {
+		this.trialNumber = trialNumber;
+	}
+
+	public TwilioConfiguration() {
 
     }
 
@@ -32,11 +42,13 @@ public class TwilioConfiguration {
         this.authToken = authToken;
     }
 
-    public String getTrialNumber() {
-        return trialNumber;
-    }
+	public String getServiceId() {
+		return serviceId;
+	}
 
-    public void setTrialNumber(String trialNumber) {
-        this.trialNumber = trialNumber;
-    }
+	public void setServiceId(String serviceId) {
+		this.serviceId = serviceId;
+	}
+
+   
 }

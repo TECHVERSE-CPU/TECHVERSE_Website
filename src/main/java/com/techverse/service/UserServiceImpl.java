@@ -125,6 +125,12 @@ public class UserServiceImpl implements UserService {
 		return null;
 	}
 
+	public ResponseEntity<String> saveFormandMeetingData(Meeting meeting) {
+		// TODO Auto-generated method stub
+		userRepository.save(meeting);
+        return new ResponseEntity<String>("formandMeeting details saved..", HttpStatus.OK);
+	}
+
 	
 
 }

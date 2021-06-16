@@ -17,8 +17,10 @@ public interface UserService {
 
 	public String updateEmployee(String userId, User user);
 
-	public ResponseEntity<String> saveMeetingandsendEmail(Meeting meeting);
+	public ResponseEntity<String> saveFormandMeetingData(Meeting meeting);
 
 	public List<User> getUserStatus(String status);
 
+	
+	public ResponseEntity<String> saveMeetingandsendEmail(Meeting meeting);
 }

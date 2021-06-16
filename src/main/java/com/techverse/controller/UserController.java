@@ -115,7 +115,16 @@ public class UserController  {
 	
 	
 	
-    	
+    //form 6 
+	  @RequestMapping(value="/customer/save/formtype", method ={RequestMethod.POST,RequestMethod.GET})
+	    public ResponseEntity<String> saveFormType(@RequestBody Meeting meeting) {
+	    	System.out.println("enter saveFormTypemethod");
+	    	userService.saveFormandMeetingData(meeting);
+	        // return "User Profile entry  deleted with number : ", HttpStatus.OK;
+	        return new ResponseEntity<String>("Formand Meeting details saved..",HttpStatus.OK);
+		}
+	   
+	
     	
 }
 
